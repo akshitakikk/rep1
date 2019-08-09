@@ -1,0 +1,11 @@
+def bubbleSort(seq): 
+    n = len(seq) 
+    for i in range(n): 
+      for j in range(0, n-i-1): 
+        if seq[j] > seq[j+1] : 
+          seq[j], seq[j+1] = seq[j+1], seq[j]
+    return bubbleSort
+
+seq = [64, 34, 25, 12, 22, 11, 90] 
+bubbleSort(seq)
+print(seq)
